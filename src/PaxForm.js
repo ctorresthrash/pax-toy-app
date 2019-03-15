@@ -12,6 +12,7 @@ const AmountForm = ({ isFetchingIp, errorIp, ipAddress }) => {
   } else if (ipAddress) {
     return (
       <div>
+        <p>{JSON.stringify(ipAddress, null, 2)}</p>
         <input
           type="text"
           placeholder="Transaction Amount"
